@@ -1,5 +1,5 @@
 ## MI REPOSITORIO
- HI MY NAME IS ISAIAS ITS MY FAVORITE ACTIVITY ITS A PROGRAMMING STATES 
 
 ![no images](imagenes/descarga.jpeg)
 
+Mi nombre es Isaias Moreno Luna y me gusta jugar videojuegos en la noche
