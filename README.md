@@ -1,6 +1,6 @@
 ## MI REPOSITORIO
 
-![no images](imagenes/descarga.jpeg)
+![no images](imagenes/a.jpg)
 
 Mi nombre es Isaias Moreno Luna y me gusta jugar videojuegos en la noche
 > U1 Programming introduction
