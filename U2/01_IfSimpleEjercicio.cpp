@@ -7,7 +7,8 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     int numero;
     int dato = 1;
 
