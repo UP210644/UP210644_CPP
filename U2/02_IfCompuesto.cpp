@@ -1,34 +1,68 @@
-/* Unidad 2. Uso del if else
+/* Unidad 2. Ejercicio sobre el uso del if 
    Autor: Isaias Moreno Luna
-   Fecha: 26/09/2022
-   Descripción: Muestra el uso del if else
+   Fecha: 24/09/2022
+   Descripción: Programa con el uso del if else
 */
 
-//Libreria para manejo de entradas y salida de pantalla
 #include <iostream>
-
-//Uso del namespace para evitar el std::
 using namespace std;
 
-//Función principal de tipo entero
-int main()
-{
-   int numero;
-   int dato = 1;
+//------------------ MAIN FUNCTION ---------------------
 
-   cout << "Ingresa un numero entero: ";
-   cin >> numero;
-   if (numero == dato){
-    cout << "El número es igual a dato" << endl;
-   }   
-   else{
-    cout << "El número es diferente del dato" << endl;
-   }
+int main(){
+    int num;
+    int data = 1;//Establish data value as integer 1
 
-    //Ejercicio: utilice las diferentes comparaciones ==, !=, <, >, <=, >=
+    cout << "Ingresa un numero entero" << endl;
+    cin >> num;
+//EQUAL CHECK
+    if (num == data){//Boolean check
+        cout << "El numero es igual al dato" << endl;//Print sentence
+    }
+    else//if previous condition is not TRUE, do this
+    {
+        cout << "El numero no es igual al dato" << endl;
+    }
+//BIG CHECK
+    if (num > data){//Boolean check
+        cout << "El numero es mayor al dato" << endl;//Print sentence
+    }
+    else//if previous condition is not TRUE, do this
+    {
+        cout << "El numero no es mayor al dato" << endl;
+    }
+ //BIGEQUAL CHECK   
+   if (num >= data){//Boolean check
+        cout << "El numero es mayor o igual al dato" << endl;//Print sentence
+    }
+    else//if previous condition is not TRUE, do this
+    {
+        cout << "El numero no es mayor ni igual al dato" << endl;
+    }
+//LIL CHECK
+   if (num < data){//Boolean check
+        cout << "El numero es menor al dato" << endl;//Print sentence
+    }
+    else//if previous condition is not TRUE, do this
+    {
+        cout << "El numero no es menor al dato" << endl;
+    }
+//LILEQUAL CHECK
+   if (num <= data){//Boolean check
+        cout << "El numero es menor o igual al dato" << endl;//Print sentence
+    }
+    else//if previous condition is not TRUE, do this
+    {
+        cout << "El numero no es menor ni igual al dato" << endl;
+    }  
+//DIF CHECK
+   if (num != data){//Boolean check
+        cout << "El numero es diferente al dato" << endl;//Print sentence
+    }
+    else//if previous condition is not TRUE, do this
+    {
+        cout << "El numero no es diferente al dato" << endl;
+    }  
 
-    
-
-    //Al ser una función debe retornar un valor, en este caso 0
     return 0;
 }
