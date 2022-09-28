@@ -1,7 +1,7 @@
 /* Unidad 2. Ejercicio sobre el uso del if 
    Autor: Isaias Moreno Luna
    Fecha: 24/09/2022
-   Descripción: Programa con el uso del if
+   Descripción: Programa con el uso del if else
 */
 
 #include <iostream>
