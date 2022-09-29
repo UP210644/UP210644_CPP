@@ -1,16 +1,8 @@
-/* Unidad 2. Practica 1
+/* Unidad 2. Ejercicio 1
    Autor: Isaias Moreno Luna
    Fecha: 26/09/2022
    Descripción: Ejercicio de Renta
-*/
 
-#include <iostream>
-
-using namespace std;
-
-//---------------------- ISSUE -------------------------
-
-/*
 Los tramos impositivos para la declaración de la renta en un determinado país son los siguientes:
 Renta	Tipo impositivo
 Menos de $10,000	5%
@@ -22,7 +14,8 @@ Escribir un programa que pregunte al usuario su renta anual y muestre por
 pantalla el tipo impositivo que le corresponde.
 */
 
-//------------------ MAIN FUNCTION ---------------------
+#include <iostream>
+using namespace std;
 
 int main(){
     float Renta; 
