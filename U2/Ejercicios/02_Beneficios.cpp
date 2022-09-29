@@ -1,13 +1,8 @@
-/* Unidad 2. Practica 2
+/* Unidad 2. Ejercicio 2
    Autor: Isaias Moreno Luna
    Fecha: 26/09/2022
    Descripción: Ejercicio de Beneficios
-*/
 
-#include <iostream>
-using namespace std;
-
-/*
 En una determinada empresa, sus empleados son evaluados al final de cada año. 
 Los puntos que pueden obtener en la evaluación comienzan en 0.0 y pueden ir aumentando, 
 traduciéndose en mejores beneficios. Los puntos que pueden conseguir 
@@ -24,33 +19,33 @@ Escribir un programa que lea la puntuación del usuario e indique su nivel de re
 así como la cantidad de dinero que recibirá el usuario.
 */
 
+#include <iostream>
+using namespace std;
 
 int main(){
+    double calificacion;
+    double bono = 2400;
 
-    float inaceptable;
-    float aceptable;
-    float  meritorio;
-    float bonificacion;
-    float nivel; 
-    float nivelderendimiento; 
-    float puntuacion;
+    cout<<"Ingrese su calificación anual: \n0.0      0.4      0.6+\n";
+    cin>>calificacion;
 
-    cout<< "Ingrese su puntuacion: " << endl;
-    cin >> inaceptable;
-    cin >> aceptable;
-    cin >> meritorio;
-    if (inaceptable == 0.0;
-    {
-        puntuacion = inaceptable*bonificacion;
+    if (calificacion == 0.0){
+        cout<<"De acuerdo a tu calificación, tu bono es de 0";
+        cout<<"\nRendimiento inaceptable.";
+    }else{
+        if (calificacion == 0.4){
+            cout<<"De acuerdo a tu calificación, tu bono es de " <<bono*calificacion;
+            cout<<"\nRendimiento aceptable.";
+        }else{
+            if (calificacion >= 0.6 && calificacion <= 1){
+                cout<<"De acuerdo a tu calificación, tu bono es de : " <<bono*calificacion;
+                cout<<"\nRendimiento meritorio.";
+            }else{
+                cout<<"Valor inválido";
+            }
+        }
     }
-    if (puntuacion == aceptable);
-    {
-        puntuacion = aceptable*bonificacion;
-    }
-    if (puntuacion == meritorio);
-    {
-        puntuacion = meritorio*bonificacion;
-    }
-    cout << "su nivel de rendimiento es: " << endl;
-    
+
+
+    return 0;
 }
