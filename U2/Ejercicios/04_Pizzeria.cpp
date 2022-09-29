@@ -22,17 +22,3 @@ ingredientes que lleva
 
 #include <iostream>
 using namespace std;
-
-int main(){
-int tipo;
-int vegetariana;
-int novegetariana;
-int pimiento;
-int tofu;
-int peperoni;
-int jamon;
-int salmon;
-
-cout << "Bienvenido ala pizzeria Bella Napoli \n "<< endl;
-
-}
