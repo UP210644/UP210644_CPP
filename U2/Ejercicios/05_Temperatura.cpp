@@ -11,21 +11,26 @@ baja y la mas alta.
 #include <iostream>
 using namespace std;
 
-int main(){
-    int contador=0;
-    int minimo, maximo;
-    float temperatura;
-    float tempAcum=0;
+int main()
+{
+    float temperatura, promedio, sumadetemperatura= 0, min = 99999, max = -9999;
+    int contador = 1;
     do
     {
-        cout << "Ingresa la temperatura: ";
+        cout << "Inserta la temperatura";
         cin >> temperatura;
-        tempAcum += temperatura;
+        if (temperatura >= max)
+        {
+            max = temperatura;
+        }
+        if (temperatura <= min)
+        {
+            min = temperatura;
+        }
+        sumadetemperatura += temperatura;
         contador++;
-    } while (contador < 6);
-
-    cout << "El promedio es: " << tempAcum/6 << endl;
-
+    } while (contador <= 6);
+    promedio = sumadetemperatura / 6;
+    cout << "El promedio es " << promedio << " C° \nLa temperatura mas baja es " << min << " C° \nLa temperatura mas alta es " << max << " C° \n";
     return 0;
-    
 }
