@@ -20,13 +20,13 @@ for (int i = 0; i <= num; i++)
 {
     cout << "|";
 
-    for (int j = 0; j <= 30; j++)
+    for (int j = 0; j <= 31; j++)
     {
         cout << "-";
     }
 
-    cout << "\t";
+    cout << "|";
     cout << "\n";
-    cout << "|      "<<i<<"   x   "<<multi<<"   =   "<<multi*i<<"\t|"<<endl;
+    cout << "|\t"<<i<<"   x   "<<multi<<"   =   "<<multi*i<<"\t|"<<endl;
 }
 }
