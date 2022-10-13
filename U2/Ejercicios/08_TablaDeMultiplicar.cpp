@@ -7,26 +7,30 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     int num;
     int multi;
-    cout << "Inserte el numero al cual quiere multiplicar: \n";
+    cout << "Inserte el numero al cual quiere multiplicar: ";
     cin >> num;
+    cout << "\n";
 
-    cout << "Cuantas veces quiere multiplicar al numero? \n";
+    cout << "Cuantas veces quiere multiplicar al numero? ";
     cin >> multi;
+    cout << "\n";
 
 for (int i = 0; i <= num; i++)
 {
     cout << "|";
 
-    for (int j = 0; j <= 31; j++)
+    for (int j = 0; j <= 30; j++)
     {
         cout << "-";
     }
 
-    cout << "|";
+    cout << "|\t";
     cout << "\n";
     cout << "|\t"<<i<<"   x   "<<multi<<"   =   "<<multi*i<<"\t|"<<endl;
 }
+return 0;
 }
