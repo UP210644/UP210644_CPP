@@ -27,6 +27,6 @@ for (int i = 0; i <= num; i++)
 
     cout << "\t";
     cout << "\n";
-    cout << "|"<<i<<"   x   "<<multi<<"   =   "<<multi*i<<"\t|"<<endl;
+    cout << "|      "<<i<<"   x   "<<multi<<"   =   "<<multi*i<<"\t|"<<endl;
 }
 }
