@@ -19,8 +19,8 @@ int main()
     cin >> multi;
     cout << "\n";
 
-for (int i = 0; i <= num; i++)
-{
+  for (int i = 0; i <= num; i++)
+  {
     cout << "|";
 
     for (int j = 0; j <= 30; j++)
@@ -31,6 +31,6 @@ for (int i = 0; i <= num; i++)
     cout << "|\t";
     cout << "\n";
     cout << "|\t"<<i<<"   x   "<<multi<<"   =   "<<multi*i<<"\t|"<<endl;
-}
-return 0;
+  }
+  return 0;
 }
