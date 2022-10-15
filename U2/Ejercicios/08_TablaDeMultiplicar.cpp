@@ -31,6 +31,7 @@ int main()
     cout << "|\t";
     cout << "\n";
     cout << "|\t"<<i<<"   x   "<<multi<<"   =   "<<multi*i<<"\t|"<<endl;
+
   }
   return 0;
 }
