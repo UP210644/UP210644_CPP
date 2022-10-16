@@ -19,37 +19,74 @@ ingredientes que lleva
 #include <iostream>
 using namespace std;
 
-int main(){
-    char pizza[20], ingrediente[20];
+int main()
+{
+    int tipo;
+    int ingrediente_vegetariano;
+    int ingrediente_no_vegetariano;
+    string tipo_1;
+    string ingre;
+    
+    cout << "Welcome to Bella Napoli. \n";
+    cout << "What type of pizza do you prefer ? \n";
+    cout << "1.-Vegetarian pizza. \n";
+    cout << "2.-No vegetarian pizza. \n";
+    cin >> tipo;
 
-    cout<<"¿Qué pizza desea?\nVegetariana         No vegetariana\n";
-    cin>>pizza;
+    if (tipo == 1)
+    {
+        tipo_1 = "vegetarian";
+        cout << "The ingredients are: \n";
+        cout << "1.-Pepper. \n";
+        cout << "2.-Tofu. \n";
+        cout << "All include mozarella and tomato. \n";
+        cin >> ingrediente_vegetariano;
 
-    if(pizza[0] == 'v' || pizza[0] == 'V'){
-        cout<<"Estos son los ingredientes de la pizza veegetariana:\n Pimiento        Tofu\n ¿Cuál quiere?\n";
-        cin>>ingrediente;
-        if (ingrediente[0] == 'p' || ingrediente[0] == 'P'){
-            cout<<"Su pizza es vegetariana con los siguientes ingredientes:\n Mozzarella\n Tomate\n Pimiento\n";
-        }else if (ingrediente[0] == 't' || ingrediente[0] == 'T'){
-            cout<<"Su pizza es vegetariana con los siguientes ingredientes:\n Mozzarella\n Tomate\n Tofu\n";
-        }else{
-            cout<<"No entiendo";
+        if (ingrediente_vegetariano == 1)
+        {
+            ingre = "Pepper";
         }
-    }else if (pizza[0] == 'n' || pizza[0] == 'N'){
-        cout<<"Estos son los ingredientes de la pizza no vegetariana:\n Peperoni        Jamón       Salmón\n ¿Cuál quiere?\n";
-        cin>>ingrediente;
-        if (ingrediente[0] == 'p' || ingrediente[0] == 'P'){
-            cout<<"Su pizza no es vegetariana con los siguientes ingredientes:\n Mozzarella\n Tomate\n Peperoni\n";
-        }else if (ingrediente[0] == 'j' || ingrediente[0] == 'J'){
-            cout<<"Su pizza no es vegetariana con los siguientes ingredientes:\n Mozzarella\n Tomate\n Jamón\n";
-        }else if (ingrediente[0] == 's' || ingrediente[0] == 'S'){
-            cout<<"Su pizza no es vegetariana con los siguientes ingredientes:\n Mozzarella\n Tomate\n Salmón\n";
-        }else{
-            cout<<"No entiendo";
+        else if (ingrediente_vegetariano == 2)
+        {
+            ingre = "Tofu";
         }
-    }else{
-        cout<<"No entiendo.";
+        else
+        {
+            cout << "Your ingredient does not exit";
+        }
     }
+    else if (tipo == 2)
+    {
+        tipo_1 = "no vegetarian";
 
+        cout << "The ingredients are: \n";
+        cout << "1.-Pepperoni. \n";
+        cout << "2.-Ham \n";
+        cout << "3.-Salmon \n";
+        cout << "All include mozarella and tomato \n";
+        cin >> ingrediente_no_vegetariano;
+
+        if (ingrediente_no_vegetariano == 1)
+        {
+            ingre = "Pepperoni";
+        }
+        else if (ingrediente_no_vegetariano == 2)
+        {
+            ingre = "Ham";
+        }
+        else if (ingrediente_no_vegetariano == 3)
+        {
+            ingre = "Salmon";
+        }
+    }
+    else
+    {
+        cout << "That type of pizza doesn't exit \n";
+    } 
+
+    if (tipo==1 || tipo==2){   
+        cout << "Your type of pizza is " << tipo_1 << endl;
+        cout << "Your ingredients of pizza are " << ingre << ", mozarella and tomato. \n";
+    }
     return 0;
 }
