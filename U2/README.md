@@ -261,16 +261,16 @@
 <img src="U2/../imagenes/pizzeria1.PNG" height="260"/>
 
 ### B) Vegetarian Pizza with Tofu as ingredient
-<img src="U2/../imagenes/saladejuegos2.PNG" height="71"/>
+<img src="U2/../imagenes/pizzeria2.PNG" height="260"/>
 
 ### C) Vegetarian Pizza with Pepperoni as ingredient
-<img src="U2/../imagenes/saladejuegos3.PNG" height="67"/>
+<img src="U2/../imagenes/pizzeria3.PNG" height="260"/>
 
 ### D) Non Vegetarian Pizza with Ham as ingredient
-<img src="U2/../imagenes/saladejuegos4.PNG" height="100"/>
+<img src="U2/../imagenes/pizzeria4.PNG" height="260"/>
 
 ### E) Non Vegetarian Pizza with Salmon as ingredient
-<img src="U2/../imagenes/saladejuegos4.PNG" height="100"/>
+<img src="U2/../imagenes/pizzeria5.PNG" height="260"/>
 
 <div align="center">
 <h2>
