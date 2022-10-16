@@ -258,7 +258,7 @@
 5. Show your type of pizza (vegetarian or non-vegetarian) and the ingredients.
 ## Tests
 ### A) Vegetarian Pizza with Pepper as ingredient
-<img src="U2/../imagenes/saladejuegos1.PNG" height="70"/>
+<img src="U2/../imagenes/pizzeria1.PNG" height="260"/>
 
 ### B) Vegetarian Pizza with Tofu as ingredient
 <img src="U2/../imagenes/saladejuegos2.PNG" height="71"/>
