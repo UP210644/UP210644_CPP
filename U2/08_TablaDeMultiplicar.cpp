@@ -9,29 +9,35 @@ using namespace std;
 
 int main()
 {
-    int num;
-    int multi;
-    cout << "Inserte el numero al cual quiere multiplicar: ";
-    cin >> num;
-    cout << "\n";
-
-    cout << "Cuantas veces quiere multiplicar al numero? ";
-    cin >> multi;
-    cout << "\n";
-
-  for (int i = 0; i <= num; i++)
-  {
-    cout << "|";
-
-    for (int j = 0; j <= 30; j++)
+    int counter, numberinput;
+    do
     {
-        cout << "-";
-    }
+        cout << "Write a number to multiply by ";
+        cin >> numberinput;
+        cout << "How many times do you want it multiplied ";
+        cin >> counter;
+        if (counter <= 0)
+        {
+            cout << "\nInvalid written number, try again please\n\n";
+        }
+        else
+        {
+            for (int i = 0; i < 65; i++)
+            {
+                cout << "-";
+            }
+            cout << "\n";
+            for (int i = 1; i <= counter; i++)
+            {
+                cout << "|\t" << i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput * i) << "\t\t|\n|";
+                for (int i = 0; i < 63; i++)
+                {
+                    cout << "-";
+                }
+                cout << "|\n";
+            }
+        }
+    } while (counter <= 0);
 
-    cout << "|\t";
-    cout << "\n";
-    cout << "|\t"<<i<<"   x   "<<multi<<"   =   "<<multi*i<<"\t|"<<endl;
-
-  }
-  return 0;
+    return 0;
 }
