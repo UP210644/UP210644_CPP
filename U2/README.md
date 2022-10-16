@@ -119,7 +119,7 @@
 </div>
 
 
-# Exercise 3: A program that asks for your age and print the cost of ticked.
+# Exercise 3: Program for a company that has arcades for all ages and wants to automatically calculate the price it must charge its customers to enter.
 ## Input
 ```c++
     cout << "How old are you?  ";
