@@ -54,5 +54,5 @@
 
 ## Tests
 ### A) Rent < $10,000
-<img src= "UP210644/UP210644_CPP/imagenes/Renta1.PNG" align="center" height="150" width="700"/>
+<img src= "../imagenes/renta1.png" height="" width=""/>
 
