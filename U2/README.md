@@ -151,7 +151,7 @@
 ```c++
     cout << "The cost of your ticked is $" << precio << endl;
 ```
-## Explanation.
+## Explanation
 1. Ask the user for your age.
 2. Check that the user enters an age within the following range.  
 3. Print ticket cost.   
@@ -166,6 +166,110 @@
 <img src="U2/../imagenes/saladejuegos3.PNG" height="67"/>
 
 ### D) Age < 0
+<img src="U2/../imagenes/saladejuegos4.PNG" height="100"/>
+
+<div align="center">
+<h2>
+
+[Return to Index](#index)
+</h2>
+</div>
+
+
+# Exercise 4: Program that asks the user if he wants a vegetarian pizza or not, and based on his answer shows him a menu with the ingredients available for him to choose.
+## Input
+```c++
+    cout << "Welcome to Bella Napoli. \n";
+    cout << "What type of pizza do you prefer ? \n";
+    cout << "1.-Vegetarian pizza. \n";
+    cout << "2.-No vegetarian pizza. \n";
+    cin >> tipo;
+```
+## Process
+### (Select your pizza type and ingredients)
+```c++
+    if (tipo == 1)
+    {
+        tipo_1 = "vegetarian";
+        cout << "The ingredients are: \n";
+        cout << "1.-Pepper. \n";
+        cout << "2.-Tofu. \n";
+        cout << "All include mozarella and tomato.";
+        cin >> ingrediente_vegetariano;
+
+        if (ingrediente_vegetariano == 1)
+        {
+            ingre = "Pepper";
+        }
+        else if (ingrediente_vegetariano == 2)
+        {
+            ingre = "Tofu";
+        }
+        else
+        {
+            cout << "Your ingredient does not exit";
+        }
+    }
+    else if (tipo == 2)
+    {
+        tipo_1 = "no vegetarian";
+        cout << "The ingredients are: \n";
+        cout << "1.-Pepperoni. \n";
+        cout << "2.-Ham \n";
+        cout << "3.-Salmon \n";
+        cout << "All include mozarella and tomato \n";
+        cin >> ingrediente_no_vegetariano;
+
+        if (ingrediente_no_vegetariano == 1)
+        {
+            ingre = "Pepperoni";
+        }
+        else if (ingrediente_no_vegetariano == 2)
+        {
+            ingre = "Ham";
+        }
+        else if (ingrediente_no_vegetariano == 3)
+        {
+            ingre = "Salmon";
+        }
+    }
+    else
+    {
+        cout << "That type of pizza doesn't exit \n";
+    } 
+
+    if (tipo==1 || tipo==2){   
+        cout << "Your type of pizza is " << tipo_1 << endl;
+        cout << "Your ingredients of pizza are " << ingre << ", mozarella and tomato. \n";
+    }
+```
+## Output
+```c++
+    if (tipo==1 || tipo==2){   
+        cout << "Your type of pizza is " << tipo_1 << endl;
+        cout << "Your ingredients of pizza are " << ingre << ", mozarella and tomato. \n";
+    }
+```
+## Explanation
+1. Ask the user what type of pizza he/she prefers:  
+2. Display the menu depending on your type of pizza.
+3. Ask what ingredients you want on your pizza.
+4. Save the ingredients in a string.
+5. Show your type of pizza (vegetarian or non-vegetarian) and the ingredients.
+## Tests
+### A) Vegetarian Pizza with Pepper as ingredient
+<img src="U2/../imagenes/saladejuegos1.PNG" height="70"/>
+
+### B) Vegetarian Pizza with Tofu as ingredient
+<img src="U2/../imagenes/saladejuegos2.PNG" height="71"/>
+
+### C) Vegetarian Pizza with Pepperoni as ingredient
+<img src="U2/../imagenes/saladejuegos3.PNG" height="67"/>
+
+### D) Non Vegetarian Pizza with Ham as ingredient
+<img src="U2/../imagenes/saladejuegos4.PNG" height="100"/>
+
+### E) Non Vegetarian Pizza with Salmon as ingredient
 <img src="U2/../imagenes/saladejuegos4.PNG" height="100"/>
 
 <div align="center">
