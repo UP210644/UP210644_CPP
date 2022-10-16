@@ -66,7 +66,7 @@ int main(){
             }
             cout << "\n";
         }
-    cout << "The root is approximately " << setprecision(1) <<  c;
+    cout << "The root is " << setprecision(1) <<  c;
     }
     else
     {
