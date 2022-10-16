@@ -376,4 +376,66 @@ cout << "The average is " << promedio << " C° \nThe lowest temperature is " << 
 </div>
 
 
-# Exercise 7: 
+# Exercise 7: Program that changes a decimal number to binary, only for integers greater than 0.
+## Input
+```c++
+    do
+    {
+        cout << "Input a decimal number \n";
+        cin >> num;
+```
+## Process
+```c++
+        if (num > 0)
+        {
+            while (num > 0)
+            {
+                if (num % 2 == 0)
+                {
+                    binary = '0' + binary;
+                }
+                else
+                {
+                    binary = '1' + binary;
+                }
+                num /= 2;
+            }
+```
+## Output
+```c++
+            cout << "The number you've inputted is " << binary;
+            cout << endl;
+        }
+        else if (num == 0)
+        {
+            cout << "You've inputted a 0\n";
+        }
+        else
+        {
+            cout << "The number must be greater than 0\n";
+        }
+    } while (num < 0);
+```
+## Explanation
+1. Ask the user to input a value
+2. In case the user writes a 0, exit the program
+3. In case the user writes a negative number, loop the program
+4. If the number written is valid, keep dividing the number by two and keep writing the residue of the division until the number is equal to 0.
+5. Print out the string of values done by the formula.
+6. Return 0 to check that the program ran correctly
+## Tests
+### A) Number >= 0
+<img src="U2/../imagenes/decimalbinario1.PNG" height="90"/>
+
+### B) Number < 0
+<img src="U2/../imagenes/decimalbinario2.PNG" height="90"/>
+
+<div align="center">
+<h2>
+
+[Return to Index](#index)
+</h2>
+</div>
+
+
+# Exercise 8: 
