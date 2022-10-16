@@ -438,4 +438,61 @@ cout << "The average is " << promedio << " C° \nThe lowest temperature is " << 
 </div>
 
 
-# Exercise 8: 
+# Exercise 8: Program that prints a multiplication table as far as the user wants it.
+## Input
+```c++
+    do
+    {
+    cout << "Write a number to multiply by ";
+    cin >> numberinput;
+    cout << "How many times do you want it multiplied ";
+    cin >> counter;
+```
+### Process
+```c++
+        if (counter <= 0)
+        {
+            cout << "\nInvalid written number, try again please\n\n";
+        }
+        else
+        {
+            for (int i = 0; i < 65; i++)
+            {
+                cout << "=";
+            }
+            cout << "\n";
+            for (int i = 1; i <= counter; i++)
+            {
+```
+### Output
+```c++
+                cout << "|\t" << i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput * i) << "\t\t|\n|";
+                for (int i = 0; i < 63; i++)
+                {
+                    cout << "-";
+                }
+                cout << "|\n";
+            }
+        }
+    } while (counter <= 0);
+```
+## Explanation
+1. Ask the user for the number. 
+2. Ask the user for the limit
+3. Print the  multiplication table up to the limit number entered.
+## Test
+### A) Number >= 0
+<img src="U2/../imagenes/tablademultiplicar1.PNG" height="250"/>
+
+### B) Number < 0
+<img src="U2/../imagenes/tablademultiplicar2.PNG" height="249"/>
+
+<div align="center">
+<h2>
+
+[Return to Index](#index)
+</h2>
+</div>
+
+
+# Exercise 9: 
