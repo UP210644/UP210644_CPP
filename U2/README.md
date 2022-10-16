@@ -2,13 +2,13 @@
 <h3>
 
 - [Exercise 1](#exercise-1-program-that-asks-the-user-their-annual-income-and-shows-on-the-screen-the-tax-rate-that-corresponds-to-him)  
-- [Exercise 2](#exercise-2-a-program-that-asks-the-user-for-his-score-and-displays-the-corresponding-typo-of-benefit-and-money)  
-- [Exercise 3](#exercise-3-a-program-that-asks-for-your-age-and-print-the-cost-of-ticked)  
-- [Exercise 4](#exercise-4-menu-of-a-bella-napoli-pizzeria-showing-your-type-of-pizza-and-ingredients)  
-- [Exercise 5](#exercise-5-ask-the-user-6-temperature-and-print-the-mean-highest-and-lowest-temperature)  
-- [Exercise 6](#exercise-6-ask-the-user-indefinitely-the-amount-and-price-of-the-products-finally-print-the-total-price)  
-- [Exercise 7](#exercise-7-decimal-to-binary)    
-- [Exercise 8](#exercise-8-multiplication-tables)    
+- [Exercise 2](#exercise-2-program-that-reads-the-users-score-and-indicates-their-performance-level-as-well-as-the-amount-of-money-the-user-receives)  
+- [Exercise 3](#exercise-3-program-for-a-company-that-has-arcades-for-all-ages-and-wants-to-automatically-calculate-the-price-it-must-charge-its-customers-to-enter)  
+- [Exercise 4](#exercise-4-program-that-asks-the-user-if-he-wants-a-vegetarian-pizza-or-not-and-based-on-his-answer-shows-him-a-menu-with-the-ingredients-available-for-him-to-choose)  
+- [Exercise 5](#exercise-5-program-in-which-6-temperatures-are-entered-and-determines-the-average-the-lowest-and-the-highest)  
+- [Exercise 6](#exercise-6-program-that-indefinitely-reads-quantities-of-products-and-their-price-and-at-the-end-indicates-the-total-of-the-invoice)  
+- [Exercise 7](#exercise-7-program-that-changes-a-decimal-number-to-binary-only-for-integers-greater-than-0)    
+- [Exercise 8](#exercise-8-program-that-prints-a-multiplication-table-as-far-as-the-user-wants-it)    
 
 <h3>
 
