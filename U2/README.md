@@ -51,9 +51,7 @@
 3. Check by several if's which tax rate.  
 4. Multiply the rent by the tax rate.
 5. Print the tax rate and its equivalent in dollars. 
-
 ## Tests
-
 ### A) Rent < $10,000
 <img src="U2/../imagenes/renta1.PNG" height="90"/>
 
@@ -69,6 +67,56 @@
 <div align="center">
 <h2>
 
-[Return to index](#index)
+[Return to Index](#index)
 </h2>
 </div>
+
+
+# Exercise 2: Program that reads the user's score and indicates their performance level, as well as the amount of money the user receives.
+```c++
+    cout << "What is your score: ";
+    cin >> puntuacion;
+```
+## Process
+```c++
+    if( (puntuacion <= 1 ) && ((puntuacion >= 0.6) || (puntuacion == 0.4 ))){
+        dinero = puntuacion* 2400;
+        if (puntuacion >= 0.6) {
+            cout << "Your score is Meritorious \n";
+        }else{
+            cout << "Your score is Acceptable \n";
+        }
+
+    } else{
+        cout << "Your score is unacceptable \n";
+    }
+```
+## Output
+```c++
+    cout << "Your amount of money is $" << dinero << endl;
+```
+## Explanation
+1. Ask the user for his score.
+2. Check that the user entered a score greater than or equal to 0.6 or equal to 0.
+3. Multiply your score by 2400 and store the cash value.
+4. Check what kind of score you obtained  
+
+## Tests
+### A) Score >= 0.6
+<img src="U2/../imagenes/beneficios1.PNG" height="82"/>
+
+### B) Score == 0.4
+<img src="U2/../imagenes/beneficios2.PNG" height="89"/>
+
+### C) Score == 0
+<img src="U2/../imagenes/beneficios3.PNG" height="85"/>
+
+<div align="center">
+<h2>
+
+[Return to Index](#index)
+</h2>
+</div>
+
+
+# Exercise 3: A program that asks for your age and print the cost of ticked.
