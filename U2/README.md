@@ -1,7 +1,7 @@
 # Index
 <h3>
 
-- [Exercise 1](#Exercise-1)  
+- [Exercise 1](#exercise-1-program-that-asks-the-user-their-annual-income-and-shows-on-the-screen-the-tax-rate-that-corresponds-to-him)  
 - [Exercise 2](#exercise-2-a-program-that-asks-the-user-for-his-score-and-displays-the-corresponding-typo-of-benefit-and-money)  
 - [Exercise 3](#exercise-3-a-program-that-asks-for-your-age-and-print-the-cost-of-ticked)  
 - [Exercise 4](#exercise-4-menu-of-a-bella-napoli-pizzeria-showing-your-type-of-pizza-and-ingredients)  
@@ -52,4 +52,7 @@
 4. Multiply the rent by the tax rate.
 5. Print the tax rate and its equivalent in dollars. 
 
-## Tests at the terminal
+## Tests
+### A) Rent < $10,000
+<img src= "UP210644/UP210644_CPP/imagenes/Renta1.PNG" align="center" height="150" width="700"/>
+
