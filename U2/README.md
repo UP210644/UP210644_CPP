@@ -8,12 +8,12 @@
 - [Exercise 5](#exercise-5-program-in-which-6-temperatures-are-entered-and-determines-the-average-the-lowest-and-the-highest)  
 - [Exercise 6](#exercise-6-program-that-indefinitely-reads-quantities-of-products-and-their-price-and-at-the-end-indicates-the-total-of-the-invoice)  
 - [Exercise 7](#exercise-7-program-that-changes-a-decimal-number-to-binary-only-for-integers-greater-than-0)    
-- [Exercise 8](#exercise-8-program-that-prints-a-multiplication-table-as-far-as-the-user-wants-it)    
+- [Exercise 8](#exercise-8-program-that-prints-a-multiplication-table-as-far-as-the-user-wants-it) 
+- [Exercise 9](#exercise-9-mathematical-method-for-obtaining-roots-with-the-equation-yx-x-12) 
 
 <h3>
 
 # Exercise 1: Program that asks the user their annual income and shows on the screen the tax rate that corresponds to him.
-
 ## Input
 ```c++
     cout << "Enter your annual rent: ";
