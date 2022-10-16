@@ -314,7 +314,6 @@ cout << "The average is " << promedio << " C° \nThe lowest temperature is " << 
 3. If temparures is lower than the previous one, it save it.
 4. Print the mean, highest and lower temperature.
 ## Test
-### A) 6 temperatures are entered and determines the average, the lowest and the highest.
 <img src="U2/../imagenes/temperatura1.PNG" height="220"/>
 
 <div align="center">
@@ -328,37 +327,46 @@ cout << "The average is " << promedio << " C° \nThe lowest temperature is " << 
 # Exercise 6: Program that indefinitely reads quantities of products and their price, and at the end indicates the total of the invoice.
 ## Input
 ```c++
-    cout << "Enter the amount of products: ";
-    cin >> amount;
+    int numproducto = 1;
+    float price, amount, total = 0;
+    cout << "Please input the amount and price of your products. To end type 0\n\n";
 ```
  ## Process
 ```c++
-     do
+    do
     {
-        cout << "Enter the amount of products: ";
+        cout << "Product " << numproducto << "\nAmount: ";
         cin >> amount;
-        if (amount != 0 and amount > 0)
+        if (amount <= 0)
         {
-            cout << "Enter the price of products: ";
-            cin >> price;
-            if (price < 0){
-                break;
-            }
-            totalprice += (price * amount);
+            cout << "\nInvalid amount, exiting program\n";
+            numproducto++;
+            break;
         }
-    } while (amount != 0 and amount > 0);
+        cout << "Price: ";
+        cin >> price;
+        if (price < 0)
+        {
+            cout << "\nInvalid amount, exiting program\n";
+            numproducto++;
+            break;
+        }
+        numproducto++;
+        total += (price * amount);
+    } while (price != 0);
 ```
  ## Output
 ```c++
-    cout << "The total price is $" << totalprice << endl;
+    cout << "\nYou've inputted a total of " << numproducto - 2 << " different products. ";
+    cout << "\nYour total is: " << total << "$ \n\n";
 ```
 ## Explanation
 1. Ask the user the amount. 
 2. Ask the user the price.
 3. If the user enter 0 in amount, exit the cycle.
 4. Print the total price of all products.
-### A) 6 temperatures are entered and determines the average, the lowest and the highest.
-<img src="U2/../imagenes/temperatura1.PNG" height="220"/>
+## Test
+<img src="U2/../imagenes/factura1.PNG" height="410"/>
 
 <div align="center">
 <h2>
@@ -368,4 +376,4 @@ cout << "The average is " << promedio << " C° \nThe lowest temperature is " << 
 </div>
 
 
-# Exercise 7:
+# Exercise 7: 
