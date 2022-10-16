@@ -9,7 +9,7 @@
 - [Exercise 6](#exercise-6-program-that-indefinitely-reads-quantities-of-products-and-their-price-and-at-the-end-indicates-the-total-of-the-invoice)  
 - [Exercise 7](#exercise-7-program-that-changes-a-decimal-number-to-binary-only-for-integers-greater-than-0)    
 - [Exercise 8](#exercise-8-program-that-prints-a-multiplication-table-as-far-as-the-user-wants-it) 
-- [Exercise 9](#exercise-9-mathematical-method-for-obtaining-roots-with-the-equation-yx-x-12) 
+- [Exercise 9](#exercise-9-mathematical-method-for-obtaining-roots) 
 
 <h3>
 
@@ -495,4 +495,4 @@ cout << "The average is " << promedio << " C° \nThe lowest temperature is " << 
 </div>
 
 
-# Exercise 9: Mathematical method for obtaining roots with the equation y=x² x-12.
+# Exercise 9: Mathematical method for obtaining roots.
