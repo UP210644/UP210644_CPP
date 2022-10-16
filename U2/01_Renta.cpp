@@ -11,7 +11,7 @@ Entre $20,000 y $35,000	20%
 Entre $35,000 y $60,000	30%
 Más de $60,000	45%
 Escribir un programa que pregunte al usuario su renta anual y muestre por 
-pantalla el tipo impositivo que le corresponde.
+pantalla el tipo impuesto que le corresponde.
 */
 
 #include <iostream>
@@ -20,7 +20,7 @@ using namespace std;
 int main(){
     float Renta; 
     float Impuesto;
-    cout << "Ingrese su renta anual:" << endl;
+    cout << "Ingrese su renta anual: ";
     cin >> Renta;
     if (Renta > 0 )//Is the input a valid number?
     {
