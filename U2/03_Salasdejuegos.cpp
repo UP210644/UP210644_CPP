@@ -13,24 +13,33 @@ si es mayor de 18 años, $10.
 #include <iostream>
 using namespace std;
 
-int main(){
-    int edad,precio;
-    cout << "Cual es tu edad?: \n";
+int main()
+{
+    int edad;
+    int precio;
+
+    cout << "How old are you?  ";
     cin >> edad;
-    if (edad >= 0){
-        if (edad >= 0 && edad <4){
-            precio = 0;
-        }
-        else if (edad >= 4 && edad <= 18){
-            precio = 5;
-        }
-        else if (edad > 18){
-            precio = 10;
-        }
-        cout << "\nEdad: " << edad << "\nPrecio a pagar: $" << precio << endl;
+
+    if (edad > 18)
+    {
+        precio = 10;
     }
-    else {
-        cout << "\nLa edad que fue ingresada no es valida, intenta de nuevo.\n";
+    else if (edad >= 4 && edad <=18)
+    {
+        precio = 5;
     }
+    else if (edad >= 0)
+    {
+        precio = 0;
+    }
+    else
+    {
+        cout << "Your age is invalid \n";
+        precio = 0;
+    }
+
+    cout << "The cost of your ticked is $" << precio << endl;
+
     return 0;
 }
