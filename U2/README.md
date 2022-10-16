@@ -54,5 +54,5 @@
 
 ## Tests
 ### A) Rent < $10,000
-<img src= "../imagenes/renta1.png" height="" width=""/>
+<img src= "../imagenes/renta1.PNG/>
 
