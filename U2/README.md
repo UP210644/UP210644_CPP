@@ -53,8 +53,8 @@
 5. Print the tax rate and its equivalent in dollars. 
 
 ## Tests
+
 ### A) Rent < $10,000
-<div>
 <img src="../imagenes/renta1.PNG" height="90"/>
-</div>
+
 ### B) Rent >= $10,000 and Rent < $20,000
