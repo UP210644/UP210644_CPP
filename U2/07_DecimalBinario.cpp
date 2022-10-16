@@ -3,7 +3,7 @@
    Fecha: 07/10/2022
    Descripción: Ejercicio que cambia un numero decimal a binario
 
-Realice un programa que realice la conversión de binario a decimal, solo para números
+Realice un programa que realice la conversión de decimal a binario, solo para números
 enteros mayores a 0. El resultado puede ser mostrado mediante una variable entera o en un
 conjunto de caracteres.
 */
@@ -17,7 +17,7 @@ int main()
     string binary;
     do
     {
-        cout << "Inserte un numero decimal \n";
+        cout << "Input a decimal number \n";
         cin >> num;
         if (num > 0)
         {
@@ -33,16 +33,16 @@ int main()
                 }
                 num /= 2;
             }
-            cout << "El numero convertido a binario es " << binary;
+            cout << "The number you've inputted is " << binary;
             cout << endl;
         }
         else if (num == 0)
         {
-            cout << "Has insertado un 0\n";
+            cout << "You've inputted a 0\n";
         }
         else
         {
-            cout << "El numero insertado debe ser mayor a 0\n";
+            cout << "The number must be greater than 0\n";
         }
     } while (num < 0);
     return 0;
