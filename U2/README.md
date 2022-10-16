@@ -495,4 +495,4 @@ cout << "The average is " << promedio << " C° \nThe lowest temperature is " << 
 </div>
 
 
-# Exercise 9: 
+# Exercise 9: Mathematical method for obtaining roots with the equation y=x² x-12.
