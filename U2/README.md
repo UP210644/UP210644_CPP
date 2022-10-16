@@ -58,3 +58,17 @@
 <img src="U2/../imagenes/renta1.PNG" height="90"/>
 
 ### B) Rent >= $10,000 and Rent < $20,000
+<img src="U2/../imagenes/renta2.PNG" height="92"/>
+
+### C) Rent >= $20,000 and Rent < $35,000 
+<img src="U2/../imagenes/renta3.PNG" height="87"/>
+
+### D) Rent >= $60,000
+<img src="U2/../imagenes/renta4.PNG" height="87"/>
+
+<div align="center">
+<h2>
+
+[Return to index](#index)
+</h2>
+</div>
