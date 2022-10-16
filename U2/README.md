@@ -496,3 +496,85 @@ cout << "The average is " << promedio << " C° \nThe lowest temperature is " << 
 
 
 # Exercise 9: Mathematical method for obtaining roots.
+## Input
+```c++
+    cout << "This graph is using the formula x²+x-12 \n";
+    cout << "Give me the value of (a)";
+    cin >> a;
+    cout << "Give me the value of (b)";
+    cin >> b;
+```
+## Process
+```c++
+    if ((yb > 0 && ya < 0) || (ya > 0 && yb < 0)){
+    cout << "| Exercise \t|\t A \t\t|\t B\t\t|\t C \t\t|\t f(A) \t\t\t|\t f(B) \t\t\t|\t f(C) \t\t\t| \n";
+    for (int i = 0; i < 185; i++)
+    {
+        cout << "-";
+    }
+    cout << "\n";
+    cout << "| \t" << counter << "\t|\t" << fixed << setprecision(3) << a << "\t\t|\t" << b << "\t\t|\t" << c << "\t\t|\t" << ya << "\t\t\t|\t" << yb << "\t\t\t|\t" << yc << "\t\t\t|\n";
+    for (int i = 0; i < 185; i++)
+    {
+        cout << "-";
+    }
+    cout << "\n";
+
+        while (yc >= 0.01 || yc <= -0.01)
+        {
+            if ((yc > 0 && ya < 0) || (ya > 0 && yc < 0))
+            {
+                b = c;
+            }
+            else
+            {
+                a = c;
+            }
+            if (a == b)
+            {
+                break;
+            }
+            
+            c = (a+b)/2;
+            ya = bisection(a);
+            yb = bisection(b);
+            yc = bisection(c);
+            counter++;
+            cout << "| \t" << counter << "\t|\t" << fixed << setprecision(3) << a << "\t\t|\t" << b << "\t\t|\t" << c << "\t\t|\t" << ya << "\t\t\t|\t" << yb << "\t\t\t|\t" << yc << "\t\t\t|\n";
+            for (int i = 0; i < 185; i++)
+            {
+                cout << "-";
+            }
+            cout << "\n";
+        }
+```
+## Output
+```c++
+    cout << "The root is " << setprecision(1) <<  c;
+    }
+    else
+    {
+        cout << "There's no root between the numbers";
+    }
+```
+## Explanation
+1. Ask the user for the range (a and b).
+2. Obtain the point c.
+3. Get the y-values when its value is a, b and c.
+4. If the Y(c) value is greater than or equal to 0.01 or less than or equal to -0.01  
+5. Print the root if there is
+## Tests
+### A) When the root is within the established range
+<img src="U2/../imagenes/metodobiseccion1.PNG" height="600"/>
+
+### B) When the root is not within the established range.
+<img src="U2/../imagenes/metodobiseccion2.PNG" height="110"/>
+
+<div align="center">
+<h2>
+
+[Return to Index](#index)
+</h2>
+</div>
+
+
