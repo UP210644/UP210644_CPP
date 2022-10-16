@@ -258,10 +258,10 @@
 5. Show your type of pizza (vegetarian or non-vegetarian) and the ingredients.
 ## Tests
 ### A) Vegetarian Pizza with Pepper as ingredient
-<img src="U2/../imagenes/pizzeria1.PNG" height="260"/>
+<img src="U2/../imagenes/pizzeria1.PNG" height="240"/>
 
 ### B) Vegetarian Pizza with Tofu as ingredient
-<img src="U2/../imagenes/pizzeria2.PNG" height="260"/>
+<img src="U2/../imagenes/pizzeria2.PNG" height="240"/>
 
 ### C) Vegetarian Pizza with Pepperoni as ingredient
 <img src="U2/../imagenes/pizzeria3.PNG" height="260"/>
@@ -280,4 +280,80 @@
 </div>
 
 
-#
+# Exercise 5: Program in which 6 temperatures are entered and determines the average, the lowest and the highest.
+## Input
+```c++
+    cout << "Insert the temperature: ";
+    cin >> temperatura;
+```
+ ## Process
+ ```c++
+     do
+    {
+        cout << "Insert the temperature: ";
+        cin >> temperatura;
+        if (temperatura >= max)
+        {
+            max = temperatura;
+        }
+        if (temperatura <= min)
+        {
+            min = temperatura;
+        }
+        sumadetemperatura += temperatura;
+        contador++;
+    } while (contador <= 6);
+```
+ ## Output
+```c++
+cout << "The average is " << promedio << " C° \nThe lowest temperature is " << min << " C° \nThe highest temperature is " << max << " C° \n";
+```
+## Explanation
+1. Ask the user 6 temperature.
+2. If temparures is higher than the previous one, it save it.
+3. If temparures is lower than the previous one, it save it.
+4. Print the mean, highest and lower temperature.
+## Test
+### A) 6 temperatures are entered and determines the average, the lowest and the highest.
+<img src="U2/../imagenes/temperatura1.PNG" height="220"/>
+
+<div align="center">
+<h2>
+
+[Return to Index](#index)
+</h2>
+</div>
+
+
+# Exercise 6: Program that indefinitely reads quantities of products and their price, and at the end indicates the total of the invoice.
+## Input
+```c++
+    cout << "Enter the amount of products: ";
+    cin >> amount;
+```
+ ## Process
+```c++
+     do
+    {
+        cout << "Enter the amount of products: ";
+        cin >> amount;
+        if (amount != 0 and amount > 0)
+        {
+            cout << "Enter the price of products: ";
+            cin >> price;
+            if (price < 0){
+                break;
+            }
+            totalprice += (price * amount);
+        }
+    } while (amount != 0 and amount > 0);
+```
+ ## Output
+```c++
+    cout << "The total price is $" << totalprice << endl;
+```
+## Explanation
+1. Ask the user the amount. 
+2. Ask the user the price.
+3. If the user enter 0 in amount, exit the cycle.
+4. Print the total price of all products.
