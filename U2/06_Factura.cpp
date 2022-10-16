@@ -14,28 +14,30 @@ using namespace std;
 int main()
 {
     int numproducto = 1;
-    float precio, cantidad, total = 0;
-    cout << "Bienvenido, inserte la cantidad y el precio de sus productos. Para finalizar el programa toque la tecla 0\n\n";
+    float price, amount, total = 0;
+    cout << "Please input the amount and price of your products. To end type 0\n\n";
     do
     {
-        cout << "Producto " << numproducto << "\ncantidad: ";
-        cin >> cantidad;
-        if (cantidad <= 0)
+        cout << "Product " << numproducto << "\nAmount: ";
+        cin >> amount;
+        if (amount <= 0)
         {
-            cout << "\nCantidad no valida\n";
+            cout << "\nInvalid amount, exiting program\n";
+            numproducto++;
             break;
         }
-        cout << "Precio: ";
-        cin >> precio;
-        if (precio < 0)
+        cout << "Price: ";
+        cin >> price;
+        if (price < 0)
         {
-            cout << "\nCantidad no valida\n";
+            cout << "\nInvalid amount, exiting program\n";
+            numproducto++;
             break;
         }
         numproducto++;
-        total += (precio * cantidad);
-    } while (precio != 0);
-    cout << "\nInsertaste una cantidad de " << numproducto - 2 << " productos diferentes. ";
-    cout << "\nTu total es " << total << "$ \n\n";
+        total += (price * amount);
+    } while (price != 0);
+    cout << "\nYou've inputted a total of " << numproducto - 2 << " different products. ";
+    cout << "\nYour total is: " << total << "$ \n\n";
     return 0;
 }
