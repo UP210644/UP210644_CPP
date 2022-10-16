@@ -17,7 +17,7 @@ int main()
     int contador = 1;
     do
     {
-        cout << "Inserta la temperatura";
+        cout << "Insert the temperature: ";
         cin >> temperatura;
         if (temperatura >= max)
         {
@@ -31,6 +31,6 @@ int main()
         contador++;
     } while (contador <= 6);
     promedio = sumadetemperatura / 6;
-    cout << "El promedio es " << promedio << " C° \nLa temperatura mas baja es " << min << " C° \nLa temperatura mas alta es " << max << " C° \n";
+    cout << "The average is " << promedio << " C° \nThe lowest temperature is " << min << " C° \nThe highest temperature is " << max << " C° \n";
     return 0;
 }
