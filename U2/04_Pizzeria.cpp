@@ -85,8 +85,8 @@ int main()
     } 
 
     if (tipo==1 || tipo==2){   
-        cout << "Your type of pizza is " << tipo_1 << endl;
-        cout << "Your ingredients of pizza are " << ingre << ", mozarella and tomato. \n";
+        cout << "Your pizza type is " << tipo_1 << endl;
+        cout << "The ingredients of your pizza are " << ingre << ", mozarella and tomato. \n";
     }
     return 0;
 }
