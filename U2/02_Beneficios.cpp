@@ -23,29 +23,24 @@ así como la cantidad de dinero que recibirá el usuario.
 using namespace std;
 
 int main(){
-    double calificacion;
-    double bono = 2400;
+    double puntuacion;
+    double dinero=0;
 
-    cout<<"Ingrese su calificación anual: \n0.0      0.4      0.6+\n";
-    cin>>calificacion;
+    cout << "What is your score: ";
+    cin >> puntuacion;
 
-    if (calificacion == 0.0){
-        cout<<"De acuerdo a tu calificación, tu bono es de 0";
-        cout<<"\nRendimiento inaceptable.";
-    }else{
-        if (calificacion == 0.4){
-            cout<<"De acuerdo a tu calificación, tu bono es de " <<bono*calificacion;
-            cout<<"\nRendimiento aceptable.";
+    if( (puntuacion <= 1 ) && ((puntuacion >= 0.6) || (puntuacion == 0.4 ))){
+        dinero = puntuacion* 2400;
+        if (puntuacion >= 0.6) {
+            cout << "Your score is Meritorious \n";
         }else{
-            if (calificacion >= 0.6 && calificacion <= 1){
-                cout<<"De acuerdo a tu calificación, tu bono es de : " <<bono*calificacion;
-                cout<<"\nRendimiento meritorio.";
-            }else{
-                cout<<"Valor inválido";
-            }
+            cout << "Your score is Acceptable \n";
         }
+
+    } else{
+        cout << "Your score is unacceptable \n";
     }
 
-
+    cout << "Your amount of money is $" << dinero << endl;
     return 0;
-}
+} 
