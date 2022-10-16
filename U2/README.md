@@ -73,6 +73,7 @@
 
 
 # Exercise 2: Program that reads the user's score and indicates their performance level, as well as the amount of money the user receives.
+## Input
 ```c++
     cout << "What is your score: ";
     cin >> puntuacion;
@@ -100,7 +101,6 @@
 2. Check that the user entered a score greater than or equal to 0.6 or equal to 0.
 3. Multiply your score by 2400 and store the cash value.
 4. Check what kind of score you obtained  
-
 ## Tests
 ### A) Score >= 0.6
 <img src="U2/../imagenes/beneficios1.PNG" height="82"/>
@@ -120,3 +120,60 @@
 
 
 # Exercise 3: A program that asks for your age and print the cost of ticked.
+## Input
+```c++
+    cout << "How old are you?  ";
+    cin >> edad;
+```
+## Process
+```c++
+    if (edad > 18)
+    {
+        precio = 10;
+    }
+    else if (edad >= 4 && edad < 18)
+    {
+        precio = 5;
+    }
+    else if (edad >= 0)
+    {
+        precio = 0;
+    }
+    else
+    {
+        cout << "Your age is invalid \n";
+        precio = 0;
+    }
+
+    cout << "The cost of your ticked is $" << precio << endl;
+```
+## Output
+```c++
+    cout << "The cost of your ticked is $" << precio << endl;
+```
+## Explanation.
+1. Ask the user for your age.
+2. Check that the user enters an age within the following range.  
+3. Print ticket cost.   
+## Tests
+### A) Age > 18
+<img src="U2/../imagenes/saladejuegos1.PNG" height="70"/>
+
+### B) Age >= 4 and Age <=18
+<img src="U2/../imagenes/saladejuegos2.PNG" height="71"/>
+
+### C) Age < 4 and Age > 0
+<img src="U2/../imagenes/saladejuegos3.PNG" height="67"/>
+
+### D) Age < 0
+<img src="U2/../imagenes/saladejuegos4.PNG" height="100"/>
+
+<div align="center">
+<h2>
+
+[Return to Index](#index)
+</h2>
+</div>
+
+
+#
