@@ -7,47 +7,75 @@
 #include <iostream>
 using namespace std;
 
-void CambioMonedas(int num);
-void ImprimirCambio(int);
+void obtenerCambio(int, string);
+void imprimirCambio(string);
 
-int quinientos=0, doscientos=0, cien=0, cincuenta=0, veinte=0, diez=0, cinco=0, dos=0, uno=0;
+int quinientos = 0, docientos = 0, cien = 0, cincuenta = 0, veinte = 0, diez = 0, cinco = 0, dos = 0, uno = 0;
 
 int main()
 {
-    int money;
-    cout << "Give me a money amount: \n";
-    cin >> money;
-    CambioMonedas(money);
-    ImprimirCambio(money);
+    int dinero;
+    string tipo;
+
+    cout << "Enter the money: ";
+    cin >> dinero;
+    cout << "Enter type change whit coin or total:";
+    cin >> tipo;
+
+    obtenerCambio(dinero, tipo);
+    imprimirCambio(tipo);
     return 0;
 }
 
-void CambioMonedas(int num)
+void obtenerCambio(int dinero, string tipo)
 {
     do
     {
-        (num >= 500) ? quinientos++, num -= 500 : 
-            (num >= 200) ? doscientos++, num -= 200 : 
-                (num >= 100) ? cien++, num -= 100 : 
-                    (num >= 50) ? cincuenta++, num -= 50 : 
-                        (num >= 20) ? veinte++, num -= 20 : 
-                            (num >= 10) ? diez++, num -= 10 : 
-                                (num >= 5) ? cinco++, num -= 5 : 
-                                    (num >= 2) ? dos++, num -= 2 : 
-                                        (num >= 1) ? uno++, num -= 1 :
-                                             uno;
-    } while (num > 0);
+        
+        if (tipo=="total" || tipo == "TOTAL" || tipo == "Total") 
+        {
+            ((dinero - 500) >= 0) ? quinientos++, dinero -= 500 
+                : ((dinero - 200) >= 0) ? docientos++, dinero -= 200 
+                    : ((dinero - 100) >= 0) ? cien++, dinero -= 100 
+                        : ((dinero - 50) >= 0) ? cincuenta++, dinero -= 50 
+                            : ((dinero - 20) >= 0) ? veinte++, dinero -= 20 
+                                : ((dinero - 10) >= 0) ? diez++, dinero -= 10 
+                                    : ((dinero - 5) >= 0) ? cinco++, dinero -= 5 
+                                        : ((dinero - 2) >= 0) ? dos++, dinero -= 2 
+                                            : ((dinero - 1) >= 0) ? uno++, dinero -= 1 
+                                                : uno;
+        }else if (tipo == "coin" || tipo == "COIN" || tipo == "Coin") 
+        {
+            ((dinero - 10) >= 0) ? diez++, dinero -= 10 
+                : ((dinero - 5) >= 0) ? cinco++, dinero -= 5 
+                    : ((dinero - 2) >= 0) ? dos++, dinero -= 2 
+                        : ((dinero - 1) >= 0) ? uno++, dinero -= 1 
+                            : uno;
+        }
+        
+    } while (dinero > 0);
 }
-void ImprimirCambio(int num)
+
+void imprimirCambio(string tipo)
 {
-    cout << "The amount you inputted is $" << num << "\nYour change is: ";
-    cout << "\n$500 = " << quinientos;
-    cout << "\n$200 = " << doscientos;
-    cout << "\n$100 = " << cien;
-    cout << "\n$50 = " << cincuenta;
-    cout << "\n$20 = " << veinte;
-    cout << "\n$10 = " << diez;
-    cout << "\n$5 = " << cinco;
-    cout << "\n$2 = " << dos;
-    cout << "\n$1 = " << uno;
+    cout << "The exchange is : \n";
+    if (tipo == "total" || tipo == "TOTAL" || tipo == "Total")
+    {
+        cout << "Bill of $500: " << quinientos << endl;
+        cout << "Bill of $200: " << docientos << endl;
+        cout << "Bill of $100: " << cien << endl;
+        cout << "Bill of $50: " << cincuenta << endl;
+        cout << "Bill of $20: " << veinte << endl;
+        cout << "Coin of $10: " << diez << endl;
+        cout << "Coin of $5: " << cinco << endl;
+        cout << "Coin of $2: " << dos << endl;
+        cout << "Coin of $1: " << uno << endl;
+    }else if (tipo == "coin" || tipo == "COIN" || tipo == "Coin") 
+    {
+        cout << "Coin of $10: " << diez << endl;
+        cout << "Coin of $5: " << cinco << endl;
+        cout << "Coin of $2: " << dos << endl;
+        cout << "Coin of $1: " << uno << endl;
+    }
+    
 }
