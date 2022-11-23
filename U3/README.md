@@ -95,8 +95,8 @@ gcc 04_Gato.c -o 04_Gato
 - (This is an example of player versus player)
 </div align="center">
 
-The first thing that appears on the screen is a menu to choose the game mode.  
-<img src="../imagenes/gato1.png" align="center">  
+The first thing will be the terminal showing which game mode you want to play.
+<img src="U3/../imagenes/Gato 1.PNG"/>
 Select 1 since we are going to play vs. the PC. The game board will appear with numbers from 1 to 9 to select the move.   
 <img src="../imagenes/gato2.png" align="center">  
 Now we will start playing against the PC, my first move is on cell 5. On the other hand, the PC's first move is always random.  
