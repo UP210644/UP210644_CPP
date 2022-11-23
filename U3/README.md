@@ -8,10 +8,14 @@
 
 <h3>
 
-- [Instructions for execution and use](#exercise-1-program-that-asks-the-user-their-annual-income-and-shows-on-the-screen-the-tax-rate-that-corresponds-to-him)  
-- [Flowchart](#exercise-2-program-that-reads-the-users-score-and-indicates-their-performance-level-as-well-as-the-amount-of-money-the-user-receives)  
-- [Tests](#exercise-3-program-for-a-company-that-has-arcades-for-all-ages-and-wants-to-automatically-calculate-the-price-it-must-charge-its-customers-to-enter)  
-- [Conclusion](#exercise-4-program-that-asks-the-user-if-he-wants-a-vegetarian-pizza-or-not-and-based-on-his-answer-shows-him-a-menu-with-the-ingredients-available-for-him-to-choose)  
+- [Tic tac toe Game](#tic-tac-toe-game)
+- [Index](#index)
+- [Instructions for execution and use](#instructions-for-execution-and-use)
+  - [Instructions for Windows](#instructions-for-windows)
+  - [Instructions for Linux](#instructions-for-linux)
+- [Flowchart](#flowchart)
+- [Test](#test)
+- [Conclusion](#conclusion)
 
 <h3>
 
