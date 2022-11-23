@@ -97,12 +97,16 @@ gcc 04_Gato.c -o 04_Gato
 
 The first thing will be the terminal showing which game mode you want to play
 <img src="U3/../imagenes/Gato 1.PNG"/>
+
 Game mode 1 is selected to play against the computer, in the table you can use the numbers from 1 to 9
 <img src="U3/../imagenes/Gato 2.PNG"/>
+
 My first move is cell 1, the computer as you can see is cell 5
 <img src="U3/../imagenes/Gato 3.PNG"/>  
+
 My next move is cell 4, the one on the computer as you can see is cell 7
 <img src="U3/../imagenes/Gato 4.PNG"/>  
+
 My third move is on cell 7 to prevent the computer from winning. The PC counters by putting his move in cell 3 to prevent me from winning.
 <img src="../imagenes/gato5.png" align="center">  
 My fourth move is in cell 8. The CP counters by putting their move in cell 8 to prevent me from winning.  
