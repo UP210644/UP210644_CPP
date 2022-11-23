@@ -89,6 +89,9 @@ gcc 04_Gato.c -o 04_Gato
 </div>
 
 # Test
+
+- Player1 is X
+- Player2 is O
 </div align="center">
 
 The first thing that appears on the screen is a menu to choose the game mode.  
