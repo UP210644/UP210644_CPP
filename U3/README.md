@@ -92,6 +92,7 @@ gcc 04_Gato.c -o 04_Gato
 
 - Player1 is X
 - Player2 is O
+- (This is an example of player versus player)
 </div align="center">
 
 The first thing that appears on the screen is a menu to choose the game mode.  
