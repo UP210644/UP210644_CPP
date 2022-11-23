@@ -35,8 +35,8 @@ int main()
     int mode;
     cout << "Welcome to the Tic tac toe game <3 \n";
     cout << "Which game mode you want to play (choose between number 1 and 2) \n";
-    cout << "1 - Play alone \n";
-    cout << "2 - Play with the computer \n";
+    cout << "1 - Play with the computer \n";
+    cout << "2 - Play with someone else \n";
     cin >> mode;
     if (mode == 1)
     {
@@ -53,7 +53,7 @@ int main()
                     if (placeOccupied == true)
                     {
                         system("clear");
-                        cout << "Trye again \n";
+                        cout << "Just give it another try \n";
                     }
                 } while (placeOccupied == true);
                 putMove(move, BOARD, HUMAN);
@@ -83,7 +83,7 @@ int main()
                 if (placeOccupied == true)
                 {
                     system("clear");
-                    cout << "Trye again \n";
+                    cout << "Just give it another try \n";
                 }
             } while (placeOccupied == true);
             putMove(move, BOARD, HUMAN);
@@ -101,17 +101,17 @@ int main()
     {
         if (playerTurn % 2 == 0)
         {
-            cout << "Player 1 won" << endl;
+            cout << "Player 1 just won" << endl;
         }
         else
         {
             if (mode == 1)
             {
-                cout << "PC won";
+                cout << "The computer won";
             }
             else
             {
-                cout << "Player 2 won" << endl;
+                cout << "Player 2 just won" << endl;
             }
         }
     }
@@ -180,7 +180,7 @@ int selectMove()
     int jugada1;
     do
     {
-        cout << "Give  me your move: ";
+        cout << "Insert the number you want: ";
         cin >> jugada1;
     } while (jugada1 > 9 && jugada1 < 0);
     return jugada1;
