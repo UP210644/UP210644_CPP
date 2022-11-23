@@ -104,6 +104,7 @@ Game mode 1 is selected to play against the computer, in the table you can use t
 <img src="U3/../imagenes/Gato 2.PNG"/>
 
 My first move is cell 1, the computer as you can see is cell 5
+
 <img src="U3/../imagenes/Gato 3.PNG"/>  
 
 My next move is cell 4, the one on the computer as you can see is cell 7
