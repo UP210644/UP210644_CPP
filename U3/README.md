@@ -103,20 +103,17 @@ Game mode 1 is selected to play against the computer, in the table you can use t
 
 <img src="U3/../imagenes/Gato 2.PNG"/>
 
-My first move is cell 1, the computer as you can see is cell 5
+My first move is cell 9, the computer as you can see is cell 2
 
 <img src="U3/../imagenes/Gato 3.PNG"/>  
 
-My next move is cell 4, the one on the computer as you can see is cell 7
+My next move is cell 1, the one on the computer as you can see is cell 2
 
 <img src="U3/../imagenes/Gato 4.PNG"/>  
 
-My third move is on cell 7 to prevent the computer from winning. The PC counters by putting his move in cell 3 to prevent me from winning.
-<img src="../imagenes/gato5.png" align="center">  
-My fourth move is in cell 8. The CP counters by putting their move in cell 8 to prevent me from winning.  
-<img src="../imagenes/gato6.png" align="center">  
-As the cells ran out, the game ended in a draw.  
-<img src="../imagenes/gato7.png" align="center">  
+My next move is cell 7, the one on the computer as you can see is cell 8. As you can see in the terminal says the computer won.
+
+<img src="U3/../imagenes/Gato 5.PNG"/>  
 
 <div align="center">
 <h2>
