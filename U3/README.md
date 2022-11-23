@@ -79,7 +79,7 @@ gcc 04_Gato.c -o 04_Gato
 
 # Flowchart
 
-<img src="../../UP210644_CPP/U3/imagenes/Diagrama.png" align="center">
+<img src="U3/../imagenes/Diagrama.PNG"/>
 
 <div align="center">
 <h2>
