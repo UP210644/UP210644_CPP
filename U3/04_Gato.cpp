@@ -160,11 +160,11 @@ void makeBoard()
         {
             if (structureTicTacToe[row1][col1] == 'X')
             {
-                cout << "\033[0;31m" << structureTicTacToe[row1][col1] << "\033[0m";
+                cout << "\033[0;33m" << structureTicTacToe[row1][col1] << "\033[0m";
             }
             else if (structureTicTacToe[row1][col1] == 'O')
             {
-                cout << "\033[0;32m" << structureTicTacToe[row1][col1] << "\033[0m";
+                cout << "\033[0;34m" << structureTicTacToe[row1][col1] << "\033[0m";
             }
             else
             {
