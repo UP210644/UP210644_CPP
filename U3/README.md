@@ -115,8 +115,7 @@ As the cells ran out, the game ended in a draw.
 
 # Conclusion
 
-This was a complex project, especially the development of the artificial intelligence for the PC, I was thinking for a long time about how to make it decide which move to play until I asked the teacher, hat's when we started to play in the notebook and he asked me why did you decide to put your move there, so I explained that it was so he wouldn't win, based on that he explained that before making a move we make an imaginary board where we put the moves in different places until we find a move that makes us win. From there I developed the artificial intelligence by first creating an imaginary board which is a copy of the real board and then checking if placing the move there wins, and if it doesn't win with any move it places it on a random number.  
-Another problem I had was that my code is too wide and I repeat several structures in the main and some functions. But other than that it was fun to do the game because it allowed us to understand how to use the arrays and functions correctly, I also understood the importance of debug because it allows you to run the code in pauses and shows you the variables along with their value this allows you to easily find what is the error in our code.  
+This work helped me to know and reinforce my knowledge of programming, it was entertaining to program this work but it was also very difficult for the part of artificial intelligence. I had to investigate on the internet how to improve my program so that it was the best possible.The artificial intelligence was the most cost me since it gave me error after error but in the end I was able to get what I wanted.
 
 <div align="center">
 <h2>
