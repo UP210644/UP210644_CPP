@@ -42,7 +42,8 @@ int main()
 	cout << "Player Two please enter your name: ";
 	cin  >> playerTwo.playerName;
 	playerTwo.playerID = 'O';
-	
+	cout << "  " <<endl;
+	cout << "  " <<endl;
 	full = 0;
 	win = 0;
 	again = 0;
@@ -140,7 +141,7 @@ void DisplayBoard ( char board[][10] )
 		for(ix = 1; ix <= columns; ix++)
 		{
 			if(board[i][ix] != 'X' && board[i][ix] != 'O')
-				board[i][ix] = '*';
+				board[i][ix] = '_';
 
 			cout << board[i][ix];
 			
