@@ -37,6 +37,9 @@ int main()
 	cout << "         ╚════╝   ╚════╝  ╚═╝  ╚══╝ ╚═╝  ╚══╝ ╚══════╝  ╚════╝     ╚═╝           ╚═╝ " <<endl;
 	cout << "  " <<endl;
     cout << "  " <<endl;
+	cout << "Which game mode do you want to play? \n ";
+	cout << "1 - Player vs Player \n ";
+	cout << "2 - PC vs Player \n";
 	cout << "Player One please enter your name: ";
 	cin  >> playerOne.playerName;
 	playerOne.playerID = 'X';
