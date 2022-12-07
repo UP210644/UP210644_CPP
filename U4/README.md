@@ -70,5 +70,3 @@ With this project we completed unit 4 of the 3er quarter, we learned many new fu
 [Return to Index](#index)
 </h2>
 </div>
-
-
