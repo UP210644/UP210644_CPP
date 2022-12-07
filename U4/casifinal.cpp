@@ -28,10 +28,12 @@ int main()
     int trueLength = 6;
     int dropChoice, win, full, again;
 
-    system("clear");
+    loading();
+    
+    system("cls");
     
     Mensage ();
-    
+
     gotoxy(40,13);
     cout << "Player One please enter your name: ";
     cin >> playerOne.playerName;
@@ -40,15 +42,15 @@ int main()
     cout << "Player Two please enter your name: ";
     cin >> playerTwo.playerName;
     playerTwo.playerID = 'O';
-    system("clear");
-    
+    system("cls");
+
     full = 0;
     win = 0;
     again = 0;
     Mensage ();
     dibujarEncabezado(board);
     DisplayBoard(board);
-    
+
     do
     {
         dropChoice = PlayerDrop(board, playerOne);
@@ -69,7 +71,7 @@ int main()
         CheckBellow(board, playerTwo, dropChoice);
         dibujarEncabezado(board);
         DisplayBoard(board);
-        
+
         win = CheckFour(board, playerTwo);
         if (win == 1)
         {
@@ -97,18 +99,22 @@ int PlayerDrop(char board[][10], playerInfo activePlayer)
     do
     {
         cout << "\n";
+        gotoxy(45,13);
         cout << activePlayer.playerName << "'s Turn ";
+        gotoxy(45,14);
         cout << "Please enter a number between 1 and 7: ";
         cin >> dropChoice;
-        
+
         while (board[1][dropChoice] == 'X' || board[1][dropChoice] == 'O')
         {
             cout << "That row is full, please enter a new row: ";
             cin >> dropChoice;
         }
-        system("clear");
+        system("cls");
+
+        Mensage();
     } while (dropChoice < 1 || dropChoice > 7);
-    
+
     return dropChoice;
 }
 
@@ -135,14 +141,14 @@ void dibujarEncabezado (char board[][10]){
     int rows = 6 , columns = 7, i, ix;
 
     for ( i = 0; i < columns; ++i) {
-        
+
         cout << "|", i +1;
         cout << "  " << i +1 << "  ";
         if (i+1 >= columns)
         {
             cout<< "|";
         }
-        
+
     }
     cout << endl;
 }
@@ -261,6 +267,7 @@ int restart(char board[][10])
         }
     }
     else
+        cout <<endl;
         cout << "Goodbye!" << endl;
     return restart;
 }
@@ -270,7 +277,8 @@ void gotoxy(int x,int y){
 }
 
 
-void Mensage(){
+void Mensage()
+{
     cout << "  " <<endl;
     cout << "  " <<endl;
     cout << "  " <<endl;
@@ -281,11 +289,11 @@ void Mensage(){
 	cout << "    ╚█████╔╝ ╚█████╔╝ ██║ ╚███║ ██║ ╚███║ ███████╗ ╚█████╔╝    ██║      ╚════██║ " <<endl;
 	cout << "     ╚════╝   ╚════╝  ╚═╝  ╚══╝ ╚═╝  ╚══╝ ╚══════╝  ╚════╝     ╚═╝           ╚═╝ " <<endl;
     cout << "  " <<endl;
-    cout << "  " <<endl;       
-    return;  
-    
-    
+    cout << "  " <<endl;
+
+
 }
+/*
 void loading(){
     int i, c;
     char fcolor[][10] = {
@@ -293,7 +301,7 @@ void loading(){
         "\033[1;35m", "\033[1;36m", "\033[1;37m",
     };
     std::cout << fcolor[2] << "\n\t\tLOADING...\n\n\033[0m";
-  
+
     for (i=0,c = 0;c < 10; i++,c++) {
         if(i==20)
         break;
@@ -314,4 +322,4 @@ void loading(){
     }
     std::cout<<"\e[?25h\n\n";
     return;
-}
+}*/
